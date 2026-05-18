@@ -30,3 +30,5 @@ export const getProfile = () => API.get('/auth/profile');
 // AI APIs
 export const getAIRecommendation = (employeeId) => API.post('/ai/recommend', { employeeId });
 export const rankAllEmployees = () => API.post('/ai/rank-all');
+
+export default API;

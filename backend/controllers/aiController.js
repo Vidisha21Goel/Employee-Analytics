@@ -124,7 +124,7 @@ const callOpenRouter = async (prompt) => {
     headers: {
       Authorization: `Bearer ${apiKey}`,
       'Content-Type': 'application/json',
-      'HTTP-Referer': 'http://localhost:3000',
+      'HTTP-Referer': process.env.FRONTEND_URL || 'http://localhost:3000',
       'X-Title': 'Employee Analytics System',
     },
     body: JSON.stringify({

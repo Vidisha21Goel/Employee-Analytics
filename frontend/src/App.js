@@ -13,6 +13,7 @@ import AddEmployee from './pages/AddEmployee';
 import EditEmployee from './pages/EditEmployee';
 import AIRecommendations from './pages/AIRecommendations';
 import Rankings from './pages/Rankings';
+import ManageUsers from './pages/ManageUsers';
 
 // Protected Route wrapper
 const ProtectedRoute = ({ children }) => {
@@ -35,6 +36,7 @@ function AppRoutes() {
         <Route path="/employees/edit/:id" element={<ProtectedRoute><EditEmployee /></ProtectedRoute>} />
         <Route path="/ai-recommendations" element={<ProtectedRoute><AIRecommendations /></ProtectedRoute>} />
         <Route path="/rankings" element={<ProtectedRoute><Rankings /></ProtectedRoute>} />
+        <Route path="/users" element={<ProtectedRoute><ManageUsers /></ProtectedRoute>} />
       </Routes>
     </>
   );

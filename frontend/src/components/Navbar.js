@@ -25,6 +25,9 @@ const Navbar = () => {
         <li><NavLink to="/employees/add">Add Employee</NavLink></li>
         <li><NavLink to="/ai-recommendations">AI Insights</NavLink></li>
         <li><NavLink to="/rankings">Rankings</NavLink></li>
+        {user?.role === 'admin' && (
+          <li><NavLink to="/users">Manage Users</NavLink></li>
+        )}
       </ul>
 
       <div className="navbar-user">
